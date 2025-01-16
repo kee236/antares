@@ -517,48 +517,15 @@ class Fb_rx_login
 
 	}
 
-
-	public function view_loader()
-	{
-		$pos=strpos(base_url(), 'localhost');
+        public function view_loader()
+        {
+                $pos=strpos(base_url(), 'localhost');
         if($pos!==FALSE) return true;
 
-        if(file_exists(APPPATH.'config/licence.txt') && file_exists(APPPATH.'core/licence.txt'))
-		{
-			$config_existing_content = file_get_contents(APPPATH.'config/licence.txt');
-			$config_decoded_content = json_decode($config_existing_content, true);
-			$last_check_date= $config_decoded_content['checking_date'];
-			$purchase_code  = $config_decoded_content['purchase_code'];
-			$base_url = base_url();
-			$domain_name  = get_domain_only($base_url);
+                //bugs
+        }
 
-			$url = "http://xeroneit.net/development/envato_license_activation/purchase_code_check.php?purchase_code={$purchase_code}&domain={$domain_name}&item_name=FBInboxer";
-
-			 $credentials = $this->get_general_content_with_checking_library($url);
-			 $decoded_credentials = json_decode($credentials,true);
-
-			 if(!isset($decoded_credentials['error']))
-			 {
-			     $content = json_decode($decoded_credentials['content'],true);
-			     if($content['status'] != 'success')
-			     {
-			        @unlink(APPPATH.'controllers/Home.php');
-			        @unlink(APPPATH.'controllers/Facebook_rx_config.php');
-			        @unlink(APPPATH.'controllers/Facebook_rx_account_import.php');
-			        @unlink(APPPATH.'controllers/Admin.php');
-			        @unlink(APPPATH.'libraries/Facebook/autoload.php');
-			     }
-			 }
-		}
-		else
-		{
-			@unlink(APPPATH.'controllers/Home.php');
-			@unlink(APPPATH.'controllers/Facebook_rx_config.php');
-			@unlink(APPPATH.'controllers/Facebook_rx_account_import.php');
-			@unlink(APPPATH.'controllers/Admin.php');
-			@unlink(APPPATH.'libraries/Facebook/autoload.php');
-		}
-	}
+	
 
 
 	public function get_general_content_with_checking_library($url,$proxy=""){
