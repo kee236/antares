@@ -1,3 +1,12 @@
+INSERT INTO `add_ons` (`id`, `add_on_name`, `unique_name`, `version`, `installed_at`, `update_at`, `purchase_code`, `module_folder_name`, `project_id`) VALUES 
+(27, 'Messenger Bot Connectivity', 'messenger_bot_connectivity', '2.5.7', NULL, NULL, '', 'messenger_bot_connectivity', 31);
+
+INSERT INTO `modules` (`id`, `module_name`, `add_ons_id`, `extra_text`, `limit_enabled`, `bulk_limit_enabled`, `deleted`) VALUES 
+(258, 'Messenger Bot - Connectivity : JSON API', 27, '', '1', '0', '0'),
+(261, 'Messenger Bot - Connectivity : Webview Builder', 27, '', '1', '0', '0');
+
+
+
 CREATE TABLE IF NOT EXISTS `messenger_bot_thirdparty_webhook` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
