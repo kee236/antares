@@ -66,12 +66,12 @@
         <div class="col-lg-6">
           <div class="card card-large-icons">
             <div class="card-icon text-primary">
-              <i class="fab fa-reddit-square"></i>
+              <i class="fab fa-line-square"></i>
             </div>
             <div class="card-body">
-              <h4><?php echo $this->lang->line("Reddit"); ?></h4>
-              <p><?php echo $this->lang->line("Set your Reddit app key, secret etc..."); ?></p>
-              <a href="<?php echo base_url("social_apps/reddit_settings"); ?>" class="card-cta"><?php echo $this->lang->line("Change Setting"); ?> <i class="fas fa-chevron-right"></i></a>
+              <h4><?php echo $this->lang->line("LINE BUSINESS"); ?></h4>
+              <p><?php echo $this->lang->line("Set your Line Business app key, secret etc..."); ?></p>
+              <a href="<?php echo base_url("social_apps/line_settings"); ?>" class="card-cta"><?php echo $this->lang->line("Change Setting"); ?> <i class="fas fa-chevron-right"></i></a>
             </div>
           </div>
         </div>
@@ -79,16 +79,19 @@
         <!-- <div class="col-lg-6">
           <div class="card card-large-icons">
             <div class="card-icon text-primary">
-              <i class="fab fa-pinterest-square"></i>
+              <i class="fab fa-tiktok-square"></i>
             </div>
             <div class="card-body">
-              <h4><?php echo $this->lang->line("Pinterest"); ?></h4>
-              <p><?php echo $this->lang->line("Set your Pinterest app key, secret etc..."); ?></p>
-              <a href="<?php echo base_url("social_apps/pinterest_settings"); ?>" class="card-cta"><?php echo $this->lang->line("Change Setting"); ?> <i class="fas fa-chevron-right"></i></a>
+              <h4><?php echo $this->lang->line("Tiktok"); ?></h4>
+              <p><?php echo $this->lang->line("Set your Tiktok app key, secret etc..."); ?></p>
+              <a href="<?php echo base_url("social_appstiktok_settings"); ?>" class="card-cta"><?php echo $this->lang->line("Change Setting"); ?> <i class="fas fa-chevron-right"></i></a>
             </div>
           </div>
         </div> -->
         
+
+
+
         <div class="col-lg-6">
           <div class="card card-large-icons">
             <div class="card-icon text-primary">
@@ -102,15 +105,17 @@
           </div>
         </div>
 
+
+
         <!-- <div class="col-lg-6">
           <div class="card card-large-icons">
             <div class="card-icon text-primary">
               <i class="fab fa-tumblr-square"></i>
             </div>
             <div class="card-body">
-              <h4><?php echo $this->lang->line("Tumblr"); ?></h4>
-              <p><?php echo $this->lang->line("Set your Tumblr app key, secret etc..."); ?></p>
-              <a href="<?php echo base_url("social_apps/tumblr_settings"); ?>" class="card-cta"><?php echo $this->lang->line("Change Setting"); ?> <i class="fas fa-chevron-right"></i></a>
+              <h4><?php echo $this->lang->line("What App"); ?></h4>
+              <p><?php echo $this->lang->line("Set your what app app key, secret etc..."); ?></p>
+              <a href="<?php echo base_url("social_apps/whatapp_settings"); ?>" class="card-cta"><?php echo $this->lang->line("Change Setting"); ?> <i class="fas fa-chevron-right"></i></a>
             </div>
           </div>
         </div> -->
@@ -128,15 +133,17 @@
           </div>
         </div>
 
+
+
 <!--         <div class="col-lg-6">
           <div class="card card-large-icons">
             <div class="card-icon text-primary">
-              <i class="fab fa-medium"></i>
+              <i class="fab fa-telegram"></i>
             </div>
             <div class="card-body">
-              <h4><?php echo $this->lang->line("Medium"); ?></h4>
-              <p><?php echo $this->lang->line("Set your Medium app key, secret etc..."); ?></p>
-              <a href="<?php echo base_url("social_apps/medium_settings"); ?>" class="card-cta"><?php echo $this->lang->line("Change Setting"); ?> <i class="fas fa-chevron-right"></i></a>
+              <h4><?php echo $this->lang->line("Telegram"); ?></h4>
+              <p><?php echo $this->lang->line("Set your Telegram app key, secret etc..."); ?></p>
+              <a href="<?php echo base_url("social_apps/telegram_settings"); ?>" class="card-cta"><?php echo $this->lang->line("Change Setting"); ?> <i class="fas fa-chevron-right"></i></a>
             </div>
           </div>
         </div>     -->  
