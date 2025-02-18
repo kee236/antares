@@ -42,5 +42,14 @@ $route['default_controller'] = "home";
 $route['404_override'] = 'home/error_404';
 
 
+$route['ai_manager/openai_settings'] = 'ai_manager/Ai_manager/openai_settings';
+
+$route['ai_manager/gemini_settings'] = 'ai_manager/Ai_manager/gemini_settings';
+
+$route['ai_manager/deepseek_settings'] = 'ai_manager/Ai_manager/deepseek_settings';
+
+
+
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
